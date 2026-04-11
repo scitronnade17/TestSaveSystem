@@ -16,11 +16,6 @@ public class ProgressService: IProgressService
     public PlayerProgress Progress { get; private set; }
     public bool HasLoadProgress { get; private set; }
 
-    public ProgressService()
-    {
-        LoadProgressOrInitNew();
-    }
-
     public PlayerProgress CreateNewProgress()
     {
         HasLoadProgress = false;
